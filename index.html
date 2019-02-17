@@ -146,8 +146,11 @@ hr {
     width:620px;
 }
 
-#headsect {
-    display:flex;
+#headsect {display:flex;}
+	
+#headsect > * {
+	align-self:center;
+    webkit-align-self:center;
 }
 
 .icoe {
@@ -158,11 +161,7 @@ hr {
     -webkit-filter:grayscale(20%);
 }
 
-.desc {
-    align-self:center;
-    webkit-align-self:center;
-    margin-left:35px;
-}
+.desc {margin-left:35px;}
 
 .label {
     width:max-content;
@@ -251,11 +250,9 @@ hr {
         <div class="desc">
             <div class="label">.: HT :.</div>
             <div class="minidesc">
-                戴曉彤 // '98 // HKG --> UK // INFP // 
-                <br>
-                i draw, write, code
+                戴曉彤 // '98 // HKG --> UK // INFP // i draw, write, code
 		<br>self-taught front-end freelancer interested in game dev
-		<br>couldn't get into comsci at uni bc grades are too shit :)
+		<br>couldn't get into comsci bc grades are too shit :)
             </div><!--minidesc-->
         </div><!--desc-->
     </div><!--headsect-->
