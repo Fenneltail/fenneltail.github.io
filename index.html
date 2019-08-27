@@ -1,5 +1,5 @@
 <!-----------------------------------------------------------------------
-curated by yours truly
+curated in like 10 minutes by yours truly
 ------------------------------------------------------------------------>
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -9,7 +9,11 @@ curated by yours truly
  
 <title>HT</title>
  
-<link rel="shortcut icon" href="//i205.photobucket.com/albums/bb186/mhilkas/favoicons/30bz9ms.gif">
+<!-- <link rel="shortcut icon" href="//i205.photobucket.com/albums/bb186/mhilkas/favoicons/30bz9ms.gif"> -->
+ 
+<link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4cdfd55-47fb-4b36-b7f9-ec6cbf5c53ec/d8yxhp0-80f0304a-a140-4fc3-b548-2bbfd6b70287.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I0Y2RmZDU1LTQ3ZmItNGIzNi1iN2Y5LWVjNmNiZjVjNTNlY1wvZDh5eGhwMC04MGYwMzA0YS1hMTQwLTRmYzMtYjU0OC0yYmJmZDZiNzAyODcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.roJUaF42LXYh8x689ertzyq6nr5QOMKA0gpmPDdVreg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--------------------JAVASCRIPTS-------------------->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -45,6 +49,10 @@ $(document).ready(function(){
 <!-------------------------------------------------------------------->
  
 <style type="text/css">
+
+iframe#tumblr_controls, .iframe-controls--desktop, .tmblr-iframe--app-cta-button, body > iframe:first-child, body > iframe:nth-child(2) {
+    display:none!important;
+}
  
 /*--------------------TOOLTIPS--------------------*/
 #s-m-t-tooltip {
@@ -57,7 +65,7 @@ $(document).ready(function(){
     letter-spacing:1px;
     text-transform:uppercase;
     color:#eee; /* tooltip text color */
-    z-index:99999999999999999999999999998!important;
+    z-index:99!important;
     max-width:40vw;
 }
  
@@ -79,13 +87,11 @@ $(document).ready(function(){
  
 /*--------------------TEXT HIGHLIGHT--------------------*/
 ::selection {
-background:#fafafa;
-color:#555;
+background:#BBD3FD;
 }
  
 ::-moz-selection {
-background:#fafafa;
-color:#555;
+background:#BBD3FD;
 }
  
 /*--------------------BASICS--------------------*/
@@ -150,6 +156,10 @@ hr {
     width:620px;
 }
 
+@media(max-width: 768px){
+   #cont { width:85vw; }
+}
+
 #headsect {display:flex;}
 	
 #headsect > * {
@@ -159,15 +169,22 @@ hr {
 
 .icoe {
     width:100px;
-    height:100px;
     border-radius:100%;
     /* filter:brightness(115%);
     -webkit-filter:brightness(115%); talon widow filters */
 }
 
+@media(max-width: 768px){
+   .icoe {
+       width:80px;
+       filter:brightness(100%);
+   }
+}
+
 .desc {margin-left:35px;}
 
 .label {
+    margin-bottom:15px;
     width:max-content;
     width:-moz-max-content;
     padding:6px 10px;
@@ -179,12 +196,37 @@ hr {
     cursor:default;
 }
 
+@media(max-width: 768px){
+   .label {
+       display:none;
+   }
+}
+
 .minidesc {
-    margin-top:15px;
     font-family:libre franklin;
 }
 
+@media(max-width: 768px){
+   .minidesc {
+       font-size:0.75rem;
+   }
+}
+
 .minidesc p:last-child {margin-bottom:0px}
+
+.desc-mobile {display:none;}
+
+
+@media(max-width: 768px){
+   .desc-pc {
+       display:none;
+   }
+   
+   .desc-mobile {
+       display:block;
+   }
+}
+
 
 #naav {
     margin-top:50px;
@@ -203,6 +245,13 @@ hr {
     line-height:1em;
 }
 
+@media(max-width: 768px){
+   .navtit {
+       font-size:0.6rem;
+       padding:0.9rem;
+   }
+}
+
 .navsect {
     margin-top:15px;
     padding:0px 10px;
@@ -217,9 +266,10 @@ hr {
 .bullet-line:last-of-type {margin-bottom:0px;}
  
 .navsect .cursor {
-    -webkit-align-self:center;
-    align-self:center;
-    width:22px; /* width of bullet point icon */
+    -webkit-align-self:baseline;
+    align-self:baseline;
+    margin-top:3px;
+    width:22px;
 }
  
 .bullet-text {
@@ -231,6 +281,14 @@ hr {
     letter-spacing:1px;
     font-size:10px;
     color:#222; /* bullet point label color */
+}
+
+.bullet-text span {
+    margin-left:20px;
+}
+
+@media(max-width: 768px){
+   .bullet-text span { display:block; margin-left:0; }
 }
 	
 .drop {
@@ -260,8 +318,15 @@ hr {
         <div class="desc">
             <div class="label">.: HT :.</div>
             <div class="minidesc">
+                <div class="desc-pc">
                 戴曉彤 // '98 // HKG --> UK // INFP // i draw, write, code
 		<br>distressed support main who's perpetually bad at video games
+        		</div><!--desc-pc-->
+        		
+        		<div class="desc-mobile">
+                戴曉彤 // '98 // HKG --> UK // INFP<br>i draw, write, code
+		<br>distressed support main who's perpetually bad at video games
+        		</div><!--desc-pc-->
             </div><!--minidesc-->
         </div><!--desc-->
     </div><!--headsect-->
@@ -341,7 +406,7 @@ hr {
     
     
     <div id="naav">
-        <div class="navtit">× misc.</div>
+        <div class="navtit">× games n shit</div>
         <div class="navsect">
         
         <!---- ONE BULLET POINT ---->
@@ -358,8 +423,8 @@ hr {
         <img class="cursor" src="https://dl.dropbox.com/s/5hwjttrmhctwpd9/select%20cursor%20svg.svg">
         <div class="bullet-text">
 		<name>Bandori:</name> 100110232
-		<span style="margin-left:20px">6 × 27☆ FC</span>
-		<span style="margin-left:20px">1 × 28☆ FC</span>
+		<span>6 × 27☆ FC</span>
+		<span>1 × 28☆ FC</span>
         </div><!--please do not delete this line-->
         </div><!--please do not delete this line-->
         
@@ -393,9 +458,15 @@ hr {
         <p>
         <img src="https://66.media.tumblr.com/c2dc03289a29117eeaba50915fcca049/tumblr_phe062gZqI1qg2f5co2_1280.jpg">
         <p>
-        <img src="https://66.media.tumblr.com/eacbec92601cc70e3b701b8cf0b4ae6c/tumblr_phe043BhT51qg2f5co2_400.jpg">
+        <img src="https://66.media.tumblr.com/0652b5ecccab542d2e90b08fa070da83/tumblr_ovhtny5PI71wvuif9o1_1280.jpg">
         <p>
-        <img src="https://66.media.tumblr.com/70dbabc54724f969ab3e260d845e5ac6/tumblr_phe043BhT51qg2f5co3_400.jpg">
+        <img src="https://66.media.tumblr.com/52cd0479786a0541567b11f8f6b7faf7/tumblr_ogsyv0Wgq61vozsm7o4_1280.png">
+        <p>
+        <img src="https://66.media.tumblr.com/81acfdf716681996a7b7f318fbb2c02f/tumblr_ovu7e3y9j11v5hkj7o1_1280.jpg">
+        <p>
+        <img src="https://66.media.tumblr.com/95f886dfa78fb67f993a4cb9c9d77cd1/tumblr_inline_nyz3zq815H1rwmpp8_500.jpg">
+        <p>
+        <img src="https://66.media.tumblr.com/eacbec92601cc70e3b701b8cf0b4ae6c/tumblr_phe043BhT51qg2f5co2_400.jpg">
         <p>
         <img src="https://cdn.discordapp.com/attachments/382037367940448256/504392634455031808/293928fjf.png">
         <p>
